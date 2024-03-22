@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.svg" type="svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation</title>
+    <script src="Code.js"></script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <h1>Indian Railways <img id="logohead" src="icon.svg" alt="logo"></h1>
+        <nav class="navbar">
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </div>
+    <div class="bgimage" id="mybg">
+        <img src="hero.jpg">
+    </div>
+    <div class="Quote">
+        <p class="caption">"Your Journey, Our Commitment"</p>
+        
+    </div>
+    
+
+
+    <div id="formgp">
+        <form method="get" id="trainsearch" action="available.html">
+        <div class="frm"> 
+            <label for="start">From: </label>
+            <div class="frminput">
+                <input type="text" name="from"  required>
+            </div>
+        </div>
+        <div class="frm">
+            <label for="to">To:    </label>
+            <div class="frminput">
+                <input type="text"  required>
+            </div>
+        </div>
+        <div class="frm">
+            <label for="date">Date:</label>
+            <div class="frminput">
+                <input type="date"  name="date" id="date" max="2025">
+            </div>
+        </div>
+        <div class="frm">
+            <label for="noppl">No. of Persons: </label>
+            <div class="frminput">
+                <input type="number" max="10" min="1" required>
+            </div>
+        </div>
+        <section class="frm">
+                <div class="main-btn">
+                <input type="submit" value="Search" ></div>
+        </section>
+        </form>
+    </div>
+
+<footer class="footer">
+    <div class="foot">
+        <p>Privacy Policy</p>
+        <p>Terms and Conditions</p>
+    </div>
+</footer>
+</body>
+</html>
