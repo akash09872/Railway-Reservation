@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg" type="svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation</title>
+    <script>
+        function book(){
+            window.open("ticket.html","_blank")
+        }
+        function home(){
+          window.open("index.html","_parent")
+        }
+    </script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <h1 onclick="home()">Indian Railways <img onclick="home()" id="logohead" src="icon.svg" alt="logo"></h1>
+        <div class="navbar">
+            <a href="news.html" target="_self">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            
+            
+        </div>
+    </div> 
+    <div class="Quote">
+
+      <p class="caption">"Miles of Smiles on Every Journey" </p>
+     
+  </div> 
+
+    <div class="bgimage" id="mybg">
+        <img src="hero.jpg">
+    </div>
+
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="#column">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" placeholder="Your Email...." required>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:105px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="contdet">
+        <h3>Phone- <span><i><a href="tel:+91139">+91XXXXXXXXXX</a></i></span></h3>
+        <h3>Email- <span><i><a href="mailto:indianrailways@gov.in">indianrailways@gov.in</a></i></span></h3>
+      </div>
+      
+<footer class="footer">
+    <div class="foot">
+        <p onclick="">Privacy Policy</p>
+        <p>Terms and Conditions</p>
+    </div>
+</footer>
+</body>
+</html>
